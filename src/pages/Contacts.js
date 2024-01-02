@@ -13,9 +13,6 @@ import * as contactsOperation from '../redux/contacts/contactsOperation';
 import { UserContacts } from 'components/UserContacts/UserContacts';
 
 const Contacts = () => {
-  const contacts = useSelector(selectContacts);
-  const isLoading = useSelector(selectLoading);
-  const error = useSelector(selectError);
   const dispatch = useDispatch();
 
   useEffect(() => {
